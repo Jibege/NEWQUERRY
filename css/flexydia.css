@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+}
+
+.headerFlex {
+    background-color: red;
+    
+    display: flex;
+    height: 100px;
+}
+.navigation {
+    background-color: rgb(43, 255, 0);
+    width:40%;
+}
+.logo {
+    background-color: rgb(25, 0, 255);
+    width: 20%;
+}
+.socials {
+    background-color: rgb(136, 255, 0);
+    width: 40%;
+}
+.slider {
+    background-color: rgb(200, 255, 0);
+    width: 100%;
+    aspect-ratio: 4/1;
+}
+.articlesFlex {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles {
+width: calc(100%/3);
+aspect-ratio: 1/1;
+}
+.articles:nth-child(even) {
+    background-color: yellow;
+ }
+
+footer {
+    height: 70px;
+    background-color: orange;
+}
+
+@media screen and (max-width: 700px) {
+    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+    .slider {
+        background-color: aqua;
+    }
+    .articles {
+        width: calc(100%/2);
+        aspect-ratio: 1/1;
+        }
+.socials {
+    display: none;
+}
+
+.logo {
+    width: 20%;
+}
+.navigation {
+    width: 80%;
+}
+
+    }
+
+    @media screen and (max-width: 350px) {
+        /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+        .slider {
+           display: none;
+        }
+        .articles {
+            width: calc(100%/2);
+            aspect-ratio: 1/1;
+            }
+    
+    
+        }
+    
+
